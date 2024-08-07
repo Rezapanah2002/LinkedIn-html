@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SignUp</title>
+    <link rel="icon" type="image/x-icon" href="assets/icon.png">
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+<div id="header">
+    <img src="assets/Logo.png" alt="logo" height="30" width="30" style="background-color: transparent;">
+    <a id="linkedin-link" href="#" onclick="navigateTo('home.html')">LinkedIn</a>
+</div>
+<table id="main-menu">
+    <tr>
+        <td><a href="#" onclick="navigateTo('home.html')">Home</a></td>
+        <td><a href="#" onclick="navigateTo('explore.html')">Explore</a></td>
+<!--        <td><a href="#" onclick="navigateTo('profile.html')">Profile</a></td>-->
+        <td><a href="#" onclick="navigateTo('auth.html')">Login/Register</a></td>
+        <td><a href="#" onclick="navigateTo('requests.html')">Requests</a></td>
+    </tr>
+</table>
+<h2>Register Form:</h2>
+
+<form action="auth.html" method="POST" enctype="multipart/form-data">
+    <label for="full_name">Full Name<span>*</span>:</label>
+    <input type="text" id="full_name" name="full_name" required><br><br>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age"><br><br>
+
+    <label for="username">Username<span>*</span>:</label>
+    <input type="text" id="username" name="username" required><br><br>
+
+    <label for="bio">Biography:</label><br>
+    <textarea id="bio" name="bio"></textarea><br><br>
+
+    <label>Date of Birth<span>*</span>:</label><br>
+    <label for="day">Day:</label>
+    <input type="number" id="day" name="day" min="1" max="31" required>
+
+    <label for="month">Month:</label>
+    <select id="month" name="month" required>
+        <option value="">Select Month</option>
+        <option value="January">January</option>
+        <option value="February">February</option>
+        <option value="March">March</option>
+        <option value="April">April</option>
+        <option value="May">May</option>
+        <option value="June">June</option>
+        <option value="July">July</option>
+        <option value="August">August</option>
+        <option value="September">September</option>
+        <option value="October">October</option>
+        <option value="November">November</option>
+        <option value="December">December</option>
+    </select>
+
+    <label for="year">Year:</label>
+    <input type="number" id="year" name="year" min="1900" max="2024" required><br><br>
+
+    <label for="skills">Skills<span>*</span>:</label><br>
+    <input type="text" id="skill1" name="skills[]" required><br>
+    <input type="text" id="skill2" name="skills[]" required><br>
+    <input type="text" id="skill3" name="skills[]" required><br><br>
+
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+    </select><br><br>
+
+    <label for="education">Educational Background<span>*</span>:</label><br>
+    <textarea id="education" name="education" required></textarea><br><br>
+
+    <label for="job_history">Job History<span>*</span>:</label><br>
+    <textarea id="job_history" name="job_history" required></textarea><br><br>
+
+    <label for="profile_picture">Profile Picture:</label><br>
+    <input type="file" id="profile_picture" name="profile_picture"><br><br>
+
+    <div id="error-container"></div>
+
+    <input type="submit" value="Register">
+</form>
+</body>
+<script src="src/form.js"></script>
+</html>

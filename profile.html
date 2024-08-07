@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <link rel="icon" type="image/x-icon" href="assets/icon.png">
+    <link rel="stylesheet" href="styles/profile.css">
+</head>
+<body>
+<div id="header">
+    <img src="assets/Logo.png" alt="logo" height="30" width="30">
+    <a id="linkedin-link" href="#" onclick="navigateTo('home.html')">LinkedIn</a>
+</div>
+
+<div id="user-info"></div>
+
+<div id="user-profile"></div>
+
+<table id="menu">
+    <tr>
+        <td><a href="#" onclick="navigateTo('home.html')">Home</a></td>
+        <td><a href="#" onclick="navigateTo('explore.html')">Explore</a></td>
+        <td><a href="#" onclick="navigateTo('auth.html')">Login/Register</a></td>
+        <td><a href="#" onclick="navigateTo('requests.html')">Requests</a></td>
+    </tr>
+</table>
+<!--<a href="#" class="logout-button" onclick="logout()">Logout</a>-->
+</body>
+<script src="src/data.js"></script>
+<script src="src/profile.js"></script>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Profile</title>
+    <link rel="icon" type="image/x-icon" href="assets/icon.png">
+    <link rel="stylesheet" href="styles/editProfile.css">
+</head>
+<body>
+<div id="header">
+    <img src="assets/Logo.png" alt="logo" height="30" width="30" style="background-color: transparent;">
+    <a id="linkedin-link" href="#" onclick="navigateTo('home.html')">LinkedIn</a>
+</div>
+<table id="main-menu">
+    <tr>
+        <td><a href="#" onclick="navigateTo('home.html')">Home</a></td>
+        <td><a href="#" onclick="navigateTo('explore.html')">Explore</a></td>
+<!--        <td><a href="#" onclick="navigateTo('profile.html')">Profile</a></td>-->
+        <td><a href="#" onclick="navigateTo('auth.html')">Login/Register</a></td>
+        <td><a href="#" onclick="navigateTo('requests.html')">Requests</a></td>
+    </tr>
+</table>
+<form action="#" method="post">
+    <h4>Personal Info</h4>
+    <label for="username">Username:</label><br>
+    <input type="text" id="username" name="username" value="@sr_miller"><br><br>
+
+    <label for="age">Age:</label><br>
+    <input type="number" id="age" name="Age" value="32"><br><br>
+
+    <label for="birthdate">Birthdate:</label><br>
+    <input type="date" id="birthdate" name="birthdate" value="1992-11-05"><br><br>
+
+    <label for="bio">Biography:</label><br>
+    <textarea id="bio" name="bio" rows="4" cols="50">Holds degrees in Computer Science and Software Engineering, Known for her creativity and contribution to innovative projects.</textarea><br><br>
+
+    <hr>
+    <h4>Edicational Info</h4>
+    <label for="elementary_school">Elementary School:</label><br>
+    <input type="text" id="elementary_school" name="elementary_school" value="Henderson Elementary School" style="width: 300px;"><br><br>
+
+    <label for="middle_school">Middle School:</label><br>
+    <input type="text" id="middle_school" name="middle_school" value="Jackson Middle School" style="width: 300px;"><br><br>
+
+    <label for="high_school">High School:</label><br>
+    <input type="text" id="high_school" name="high_school" value="Lincoln High School" style="width: 300px;"><br><br>
+
+    <label for="bachelor_degree">Bachelor's Degree:</label><br>
+    <input type="text" id="bachelor_degree" name="bachelor_degree" value="Oakridge University - Computer Science" style="width: 300px;"><br><br>
+
+    <label for="master_degree">Master's Degree:</label><br>
+    <input type="text" id="master_degree" name="master_degree" value="Stanford University - Software Engineering" style="width: 300px;"><br><br>
+
+    <label for="achievement1">Achievement 1:</label><br>
+    <input type="text" id="achievement1" name="achievement1" value="Achieved 1st place in regional mathematics competitions during elementary school." style="width: 500px;"><br><br>
+
+    <label for="achievement2">Achievement 2:</label><br>
+    <input type="text" id="achievement2" name="achievement2" value="Led the robotics team to victory in the statewide robotics championship during middle school." style="width: 500px;"><br><br>
+
+    <label for="achievement3">Achievement 3:</label><br>
+    <input type="text" id="achievement3" name="achievement3" value="Won 1st prize in the state science fair and received recognition for innovative projects in high school." style="width: 500px;"><br><br>
+
+    <label for="achievement4">Achievement 4:</label><br>
+    <input type="text" id="achievement4" name="achievement4" value="Ranked among the top 5% of students in national programming competitions during university." style="width: 500px;"><br><br>
+
+    <hr>
+    <h4>Job Info</h4>
+    <label for="work_experience1">Work Experience 1:</label><br>
+    <input type="text" id="work_experience1" name="work_experience1" value="Internship at Tech Solutions Inc. (Summer 20XX): Assisted in software development projects,
+    gaining hands-on experience in web development and database management." style="width: 500px;"><br><br>
+
+    <label for="work_experience2">Work Experience 2:</label><br>
+    <input type="text" id="work_experience2" name="work_experience2" value="Junior Software Engineer at Alpha Software (20XX-20XX):
+    Contributed to the development of client projects, focusing on front-end and back-end development using React.js and Node.js." style="width: 500px;"><br><br>
+
+    <label for="work_experience3">Work Experience 3:</label><br>
+    <input type="text" id="work_experience3" name="work_experience3" value="Senior Software Engineer at Omega Technologies (20XX-Present):
+    Leads a team of developers in designing and implementing complex software solutions. Specializes in full-stack development,
+    with expertise in React.js, Node.js, and GraphQL." style="width: 500px;"><br><br>
+
+    <label for="skill1">Skill 1:</label><br>
+    <input type="text" id="skill1" name="skill1" value="Proficient in React.js, Node.js, and GraphQL." style="width: 300px;"><br><br>
+
+    <label for="skill2">Skill 2:</label><br>
+    <input type="text" id="skill2" name="skill2" value="Experienced in front-end and back-end web development." style="width: 300px;"><br><br>
+
+    <label for="skill3">Skill 3:</label><br>
+    <input type="text" id="skill3" name="skill3" value="Skilled in database management and optimization." style="width: 300px;"><br><br>
+
+    <label for="skill4">Skill 4:</label><br>
+    <input type="text" id="skill4" name="skill4" value="Strong problem-solving abilities and attention to detail." style="width: 300px;"><br><br>
+
+    <label for="skill5">Skill 5:</label><br>
+    <input type="text" id="skill5" name="skill5" value="Excellent communication and teamwork skills." style="width: 300px;"><br><br>
+
+    <input type="submit" value="Submit">
+    <button type="button">Discard</button>
+</form>
+</body>
+<script src="src/editProfile.js"></script>
+</html>

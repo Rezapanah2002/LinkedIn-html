@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Explore</title>
+    <link rel="icon" type="image/x-icon" href="assets/icon.png">
+    <link rel="stylesheet" href="styles/explore.css">
+</head>
+<body>
+<div id="header">
+    <img src="assets/Logo.png" alt="logo" height="30" width="30" style="background-color: transparent;">
+    <a id="linkedin-link" href="#" onclick="navigateTo('home.html')">LinkedIn</a>
+</div>
+<table id="main-menu">
+    <tr id="tabContent">
+        <td><a href="#" onclick="navigateTo('home.html')">Home</a></td>
+        <td><a href="#" onclick="navigateTo('explore.html')">Explore</a></td>
+<!--        <td><a href="#" onclick="navigateTo('profile.html')">Profile</a></td>-->
+        <td><a href="#" onclick="navigateTo('auth.html')">Login/Register</a></td>
+        <td><a href="#" onclick="navigateTo('requests.html')">Requests</a></td>
+    </tr>
+</table>
+<div id="search-bar">
+    <form id="searchForm">
+        <input type="text" placeholder="Search by name, bio, skills,..." name="search" id="searchInput">
+        <button type="button" onclick="performSearch()">Search</button>
+    </form>
+</div>
+<br>
+<br>
+<div id="profiles">
+    <section>
+        <table>
+            <tr>
+                <td>
+                    <img src="assets/man1.png" alt="avatar" width="40" height="40">
+                </td>
+                <td><a href="">John Doe</a></td>
+            </tr>
+        </table>
+        <ul>
+            <li>Username: johndoe123</li>
+            <li>Biography: Holds a Bachelor's and Master's degree
+                in Computer Science and Software Engineering. Known for problem-solving
+                abilities and delivering high-quality solutions.</li>
+            <li>Skills:</li>
+            <dt>HTML</dt>
+            <dt>CSS</dt>
+            <dt>JavaScript</dt>
+        </ul>
+    </section>
+    <section>
+        <table>
+            <tr>
+                <td>
+                    <img src="assets/woman1.png" alt="avatar" width="40" height="40">
+                </td>
+                <td><a href="">Emily Smith</a></td>
+            </tr>
+        </table>
+        <ul>
+            <li>Username: emilysmith87</li>
+            <li>Biography: Worked on various web projects and contributed significantly to
+                their success. Known for her dedication and teamwork.</li>
+            <li>Skills:</li>
+            <dt>Python</dt>
+            <dt>Django</dt>
+            <dt>SQL</dt>
+        </ul>
+    </section>
+    <section>
+        <table>
+            <tr>
+                <td>
+                    <img src="assets/man2.png" alt="avatar" width="40" height="40">
+                </td>
+                <td><a href=""> Michael Johnson</a></td>
+            </tr>
+        </table>
+        <ul>
+            <li>Username: mike_j</li>
+            <li>Biography: Has a strong academic background in Computer Science and Software Engineering.
+                Known for his expertise in building robust applications.</li>
+            <li>Skills:</li>
+            <dt>Java</dt>
+            <dt>Spring Boot</dt>
+            <dt>MongoDB</dt>
+        </ul>
+    </section>
+    <section>
+        <table>
+            <tr>
+                <td>
+                    <img src="assets/woman2.png" alt="avatar" width="40" height="40">
+                </td>
+                <td><a href="profile.html">Sarah Miller</a></td>
+            </tr>
+        </table>
+        <ul>
+            <li>Username: sr_miller</li>
+            <li>Biography: Holds degrees in Computer Science and Software Engineering.
+                Known for her creativity and contribution to innovative projects.</li>
+            <li>Skills:</li>
+            <dt>React.js</dt>
+            <dt>Node.js</dt>
+            <dt>GraghQL</dt>
+        </ul>
+    </section>
+</div>
+<script src="src/explore.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Requestes</title>
+    <link rel="icon" type="image/x-icon" href="assets/icon.png">
+    <link rel="stylesheet" href="styles/requests.css">
+</head>
+<body>
+<div id="header">
+    <img src="assets/Logo.png" alt="logo" height="30" width="30" style="background-color: transparent;">
+    <a id="linkedin-link" href="#" onclick="navigateTo('home.html')">LinkedIn</a>
+</div>
+<table id="main-menu">
+    <tr>
+        <td><a href="#" onclick="navigateTo('home.html')">Home</a></td>
+        <td><a href="#" onclick="navigateTo('explore.html')">Explore</a></td>
+<!--        <td><a href="#" onclick="navigateTo('profile.html')">Profile</a></td>-->
+        <td><a href="#" onclick="navigateTo('auth.html')">Login/Register</a></td>
+        <td><a href="#" onclick="navigateTo('requests.html')">Requests</a></td>
+    </tr>
+</table>
+<h2>[*Admin Only]</h2>
+<hr>
+<div class="container">
+    <div class="card">
+        <p><b>Request from John</b></p>
+        <p>Username!</p>
+        <p>John want to Change his Username<a href="#">(Details)</a></p>
+        <button type="button" class="accept-button">Accept</button>
+        <button type="button" class="discard-button">Decline</button>
+    </div>
+    <hr>
+    <div class="card">
+        <p><b>Request from Sarah</b></p>
+        <p>Academic Achievements!</p>
+        <p>Sarah want to Update her Achievements<a href="#">(Details)</a></p>
+        <button type="button" class="accept-button">Accept</button>
+        <button type="button" class="discard-button">Decline</button>
+    </div>
+</div>
+<script src="src/requests.js"></script>
+</body>
+</html>

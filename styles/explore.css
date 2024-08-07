@@ -1,0 +1,132 @@
+/* Resetting default margin and padding */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, table, tr, th, td {
+    margin-left: 10px;
+    padding: 2px;
+}
+
+/* Setting font family and color */
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #333; /* Dark background color */
+}
+
+/* Styling logo and main menu */
+#header {
+    display: flex;
+    align-items: center; /* Center vertically */
+}
+
+#linkedin-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+table {
+    width: 100%;
+}
+
+table td {
+    padding: 10px;
+}
+
+table a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Styling main menu */
+#main-menu {
+    background-color: #222; /* Darker background color for the menu */
+    margin: auto;
+}
+
+#main-menu td {
+    border: 2px solid #444; /* Border between menu items */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+    text-align: center; /* Center align text */
+}
+
+#main-menu td:hover {
+    background-color: #444; /* Darker background color on hover */
+}
+
+/* Styling search bar */
+#search-bar {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#search-bar input[type="text"] {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #444; /* Dark border for input field */
+    border-radius: 5px; /* Rounded corners for input field */
+    background-color: #333; /* Dark background color for input field */
+    color: #fff; /* Light text color for input field */
+}
+
+#search-bar button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px; /* Rounded corners for button */
+    background-color: #007bff; /* Blue background color for button */
+    color: #fff; /* White text color for button */
+    cursor: pointer;
+}
+
+#search-bar button:hover {
+    background-color: #0056b3; /* Darker blue color on hover */
+}
+
+/* Styling profile section */
+section {
+    background-color: #444;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    text-align: left;
+    border-left: 5px solid #337ab7;
+}
+#profiles {
+    display: flow;
+    flex-direction: column;
+}
+
+#profiles table {
+    width: 80%;
+    border-collapse: collapse; /* Collapse table borders */
+}
+
+#profiles img {
+    border-radius: 50%; /* Make profile images round */
+    margin-right: 10px;
+}
+
+/* For screens smaller than 768px */
+@media only screen and (max-width: 768px) {
+    body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, table, tr, th, td {
+        margin-left: 5px;
+        padding: 1px;
+    }
+
+    #main-menu td {
+        border-right: none; /* Remove border between menu items */
+        border-bottom: 2px solid #444; /* Add border below menu items */
+    }
+
+    #profiles img {
+        width: 50px; /* Adjust profile image size */
+        height: 50px;
+        margin-right: 5px;
+    }
+}
+
+/* For screens smaller than 480px */
+@media only screen and (max-width: 480px) {
+    #profiles img {
+        width: 40px; /* Further adjust profile image size */
+        height: 40px;
+    }
+}

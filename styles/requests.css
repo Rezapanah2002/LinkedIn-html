@@ -1,0 +1,145 @@
+/* Resetting default margin and padding */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, table, tr, th, td {
+    margin-left: 10px;
+    padding: 2px;
+}
+
+/* Setting font family and color */
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #333; /* Dark background color */
+}
+
+/* Styling logo and main menu */
+#header {
+    display: flex;
+    align-items: center; /* Center vertically */
+}
+
+#linkedin-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+table {
+    width: 100%;
+}
+
+table td {
+    padding: 10px;
+}
+
+table a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Styling main menu */
+#main-menu {
+    background-color: #222; /* Darker background color for the menu */
+    margin: auto;
+}
+
+#main-menu td {
+    border: 2px solid #444; /* Border between menu items */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+    text-align: center; /* Center align text */
+}
+
+#main-menu td:hover {
+    background-color: #444; /* Darker background color on hover */
+}
+
+/* Styling admin message */
+h2 {
+    color: #fff; /* Light text color for heading */
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Styling request cards */
+.container {
+    width: 80%;
+    margin: 0 auto; /* Center the container */
+}
+
+.card {
+    background-color: #222; /* Dark background color for cards */
+    color: #fff; /* Light text color for cards */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px; /* Rounded corners for cards */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for cards */
+}
+
+.card p {
+    margin-bottom: 10px;
+}
+
+.card b {
+    font-weight: bold;
+}
+
+.card a {
+    color: #007bff; /* Blue color for links */
+    text-decoration: none;
+}
+
+.card a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}
+
+/* Styling buttons */
+button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 3px; /* Rounded corners for buttons */
+    cursor: pointer;
+}
+
+button.discard-button {
+    background-color: #ff0000; /* Red background color for discard button */
+    color: #fff; /* White text color for discard button */
+}
+
+button.accept-button {
+    background-color: #007bff; /* Blue background color for buttons */
+    color: #fff; /* White text color for buttons */
+}
+
+button[class="accept-button"]:hover {
+    background-color: #0056b3; /* Darker blue color on hover */
+}
+button[class="discard-button"]:hover {
+    background-color: #b30000; /* Darker blue color on hover */
+}
+
+/* For screens smaller than 768px */
+@media only screen and (max-width: 768px) {
+    body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, table, tr, th, td {
+        margin-left: 5px;
+        padding: 1px;
+    }
+
+    #main-menu td {
+        border-right: none; /* Remove border between menu items */
+        border-bottom: 2px solid #444; /* Add border below menu items */
+    }
+
+    #profiles img {
+        width: 50px; /* Adjust profile image size */
+        height: 50px;
+        margin-right: 5px;
+    }
+}
+
+/* For screens smaller than 480px */
+@media only screen and (max-width: 480px) {
+    #profiles img {
+        width: 40px; /* Further adjust profile image size */
+        height: 40px;
+    }
+}

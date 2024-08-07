@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login/Register</title>
+    <link rel="icon" type="image/x-icon" href="assets/icon.png">
+    <link rel="stylesheet" href="styles/auth.css">
+</head>
+<body>
+<div id="header">
+    <img src="assets/Logo.png" alt="logo" height="30" width="30" style="background-color: transparent;">
+    <a id="linkedin-link" href="#" onclick="navigateTo('home.html')">LinkedIn</a>
+</div>
+<table id="main-menu">
+    <tr>
+        <td><a href="#" onclick="navigateTo('home.html')">Home</a></td>
+        <td><a href="#" onclick="navigateTo('explore.html')">Explore</a></td>
+<!--        <td><a href="#" onclick="navigateTo('profile.html')">Profile</a></td>-->
+        <td><a href="#" onclick="navigateTo('auth.html')">Login/Register</a></td>
+        <td><a href="#" onclick="navigateTo('requests.html')">Requests</a></td>
+    </tr>
+</table>
+<section id="auth-form">
+    <h2>Login to your account</h2>
+    <form action="#">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <button type="submit">Login</button>
+    </form>
+    <p>Do not have an account? <a href="#" onclick="navigateTo('form.html')">Sign up here</a></p>
+</section>
+</body>
+<script src="src/auth.js"></script>
+</html>

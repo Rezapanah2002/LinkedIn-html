@@ -1,0 +1,128 @@
+/* Resetting default margin and padding */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, table, tr, th, td {
+    margin-left: 10px;
+    padding: 2px;
+}
+
+/* Setting font family and color */
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #333; /* Dark background color */
+}
+
+/* Styling logo and main menu */
+#header {
+    display: flex;
+    align-items: center; /* Center vertically */
+}
+
+#linkedin-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+table {
+    width: 100%;
+}
+
+table td {
+    padding: 10px;
+}
+
+table a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Styling main menu */
+#menu {
+    background-color: #222; /* Darker background color for the menu */
+    margin: auto;
+}
+
+#menu td {
+    border: 2px solid #444; /* Border between menu items */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+    text-align: center; /* Center align text */
+}
+
+#menu td:hover {
+    background-color: #444; /* Darker background color on hover */
+}
+
+/* Styling profile section */
+#profiles {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-container {
+    border: 1px solid #fff; /* Add border for profile container */
+    border-radius: 10px; /* Round the corners of profile container */
+    margin-bottom: 20px; /* Add space between profile containers */
+    overflow: hidden; /* Hide overflowing content */
+}
+
+#profiles table {
+    width: 100%;
+    border-collapse: collapse; /* Collapse table borders */
+}
+
+#profiles img {
+    border-radius: 50%; /* Make profile images round */
+    margin-right: 10px;
+}
+
+/* For screens smaller than 768px */
+@media only screen and (max-width: 768px) {
+    body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, table, tr, th, td {
+        margin-left: 5px;
+        padding: 1px;
+    }
+
+    #menu td {
+        border-right: none; /* Remove border between menu items */
+        border-bottom: 2px solid #444; /* Add border below menu items */
+    }
+
+    #profiles img {
+        width: 50px; /* Adjust profile image size */
+        height: 50px;
+        margin-right: 5px;
+    }
+}
+/* Styling for Logout button */
+.logout-button {
+    position: fixed;
+    top: 10px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    z-index: 9999; /* Ensures it stays on top of other elements */
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.logout-button:hover {
+    background-color: darkred; /* Darker red on hover */
+}
+
+#user-info {
+    position: fixed;
+    top: 10px; /* Adjust as needed */
+    right: 70px; /* Adjust as needed */
+    z-index: 9999; /* Ensures it stays on top of other elements */
+}
+
+
+/* For screens smaller than 480px */
+@media only screen and (max-width: 350px) {
+    #profiles img {
+        width: 30px;
+        height: 30px;
+    }
+}

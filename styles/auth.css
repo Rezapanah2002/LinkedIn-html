@@ -1,0 +1,146 @@
+/* Resetting default margin and padding */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, table, tr, th, td {
+    margin-left: 10px;
+    padding: 2px;
+}
+
+/* Setting font family and color */
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #333; /* Dark background color */
+}
+
+/* Styling logo and main menu */
+#header {
+    display: flex;
+    align-items: center; /* Center vertically */
+}
+
+#linkedin-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+table {
+    width: 100%;
+}
+
+table td {
+    padding: 10px;
+}
+
+table a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Styling main menu */
+#main-menu {
+    background-color: #222; /* Darker background color for the menu */
+    margin: auto;
+}
+
+#main-menu td {
+    border: 2px solid #444; /* Border between menu items */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+    text-align: center; /* Center align text */
+}
+
+#main-menu td:hover {
+    background-color: #444; /* Darker background color on hover */
+}
+
+/* Styling authentication form */
+#auth-form {
+    width: 300px;
+    margin: 50px auto; /* Center the form */
+    background-color: #222; /* Dark background color for form */
+    padding: 20px;
+    border-radius: 5px; /* Rounded corners for form */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for form */
+}
+
+#auth-form h2 {
+    color: #fff; /* Light text color for form title */
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#auth-form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #fff; /* Light text color for labels */
+}
+
+#auth-form input[type="text"],
+#auth-form input[type="password"] {
+    width: calc(100% - 22px); /* 22px accounts for padding and border */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #444; /* Dark border color for inputs */
+    border-radius: 3px; /* Rounded corners for inputs */
+    background-color: #333; /* Dark background color for inputs */
+    color: #fff; /* Light text color for inputs */
+    text-align: right; /* Right align text */
+}
+
+#auth-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff; /* Blue background color for button */
+    color: #fff; /* White text color for button */
+    border: none;
+    border-radius: 3px; /* Rounded corners for button */
+    cursor: pointer;
+}
+
+#auth-form button:hover {
+    background-color: #0056b3; /* Darker blue color on hover */
+}
+
+#auth-form p {
+    margin-top: 15px;
+    color: #fff; /* Light text color for paragraph */
+}
+
+#auth-form p a {
+    text-decoration: none;
+    color: #33aaea; /* Blue color for link */
+}
+#auth-form p a:hover{
+    color: #0056b3;
+}
+
+/* For screens smaller than 768px */
+@media only screen and (max-width: 768px) {
+    body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, table, tr, th, td {
+        margin-left: 5px;
+        padding: 1px;
+    }
+
+    #main-menu td {
+        border-right: none; /* Remove border between menu items */
+        border-bottom: 2px solid #444; /* Add border below menu items */
+    }
+
+    #profiles img {
+        width: 50px; /* Adjust profile image size */
+        height: 50px;
+        margin-right: 5px;
+    }
+
+    /* Adjust input width for smaller screens */
+    #auth-form input[type="text"],
+    #auth-form input[type="password"] {
+        width: calc(100% - 14px); /* 14px accounts for padding and border */
+    }
+}
+
+/* For screens smaller than 480px */
+@media only screen and (max-width: 480px) {
+    #profiles img {
+        width: 40px; /* Further adjust profile image size */
+        height: 40px;
+    }
+}
